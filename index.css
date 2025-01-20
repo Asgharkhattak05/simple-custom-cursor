@@ -11,7 +11,10 @@ body {
 #main {
     width: 100vw;
     height: 100vh;
-    position: fixed;
+    /* position: fixed; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #cursor {
@@ -19,4 +22,27 @@ body {
     height: 20px;
     background-color: #fff;
     border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+}
+
+#image {
+    width: 60vw;
+    height: 70vh;
+    background-color: rgb(255, 0, 0);
+    position: relative;
+}
+
+#image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#overlay {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    position: absolute;
+    z-index: 10;
 }
